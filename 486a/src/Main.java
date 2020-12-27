@@ -10,7 +10,17 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Solution goes here...
+        long n = scanner.nextLong();
+        long ans = 0;
 
+        if (n % 2 == 0) {
+            ans = (long) n / 2;
+        }
+        else {
+            ans = -1 * (long) (n + 1) / 2;
+        }
+
+        System.out.println(ans);
 
     }
 
